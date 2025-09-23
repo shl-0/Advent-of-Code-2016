@@ -18,7 +18,6 @@ var inputSplit = input.split("\n");
 var totalSuma = 0;
 
 inputSplit.forEach(s => {
-    
     let charOrder = s.substring(s.indexOf("[")+1,s.indexOf("]"));
     let rawString = s.replace(charOrder,"");
     let charCount = [];

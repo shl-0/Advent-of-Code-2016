@@ -14,14 +14,12 @@ input =
 "totally-real-room-200[decoy]";
 */
 
-
 var inputSplit = input.split("\n");
 var sectorNorte = 0;
 
 var inputValidos = [];
 
 inputSplit.forEach(s => {
-    
     let charOrder = s.substring(s.indexOf("[")+1,s.indexOf("]"));
     let rawString = s.replace(charOrder,"");
     let charCount = [];
@@ -51,8 +49,6 @@ inputValidos.forEach(s => {
     let charOrder = s.substring(s.indexOf("[")+1,s.indexOf("]"));
     let rawString = s.replace(charOrder,"");
     let sector = Number(s.substring(s.indexOf("[")-3,s.indexOf("[")));
-    let charCount = [];
-    let esValido = true;
 
     let resultado = "";
     let n = sector-(26*Math.floor(sector/26));
